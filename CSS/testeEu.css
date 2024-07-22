@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+}
+/*BOTÕES*/
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 24;
+  font-size: 2.2rem;
+}
+
+/*BOTÃO MENU*/
+.btn-menu .material-symbols-outlined {
+  z-index: 1;
+}
+.btn-menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+  background-color: #fff;
+  border-radius: 25rem;
+}
+
+.trigger-menu {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  transition: transform 0.5s;
+}
+
+.content-menu {
+  display: none;
+  position: fixed;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  align-content: center;
+  background-color: #ffffff;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.menuPrincipal {
+  background-color: #ffffff;
+}
+.trigger-menu.active + .content-menu {
+  opacity: 1;
+  visibility: visible;
+}
+.content-menu nav a {
+  display: block;
+  color: #9e9c9c;
+  padding: 5rem;
+  
+}
+
+.content-menu nav a:hover {
+  text-decoration: underline;
+}
+
+.trigger-menu.active + .content-menu {
+  display: block;
+}
+/*Botão contato*/
+
+.btn-menu-contact .material-symbols-outlined {
+  z-index: 1;
+  background-color: transparent;
+}
+.btn-menu-contact {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff;
+  border-radius: 25rem;
+}
+
+.trigger-menu-contact {
+  border: none;
+  transition: transform 0.5s;
+  background-color: transparent;
+}
+.trigger-menu-contact.active {
+  transform: rotate(90deg);
+}
+.content-menu-contact {
+  display: none;
+  position: fixed;
+  bottom: 4.5rem;
+  right: 80px;
+  color: #000;
+  background-color: #ffffff;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+.menuSecundario {
+  background-color: #fff;
+}
+
+.trigger-menu-contact.active + .content-menu-contact {
+  opacity: 1;
+  visibility: visible;
+}
+.content-menu-contact nav a {
+  display: block;
+  padding: 10px 0;
+}
+
+.trigger-menu-contact.active + .content-menu-contact {
+  display: block;
+}
+
+/*BORDA*/
+.border-top-left,
+.border-bottom-right {
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: fixed;
+  z-index: -1;
+}
+
+.border-top-left {
+  top: 0;
+  left: 0;
+  background-color: transparent;
+}
+
+.border-bottom-right {
+  bottom: 0;
+  right: 0;
+  background-color: transparent;
+}
+
+.border-top-left::before,
+.border-top-left::after,
+.border-bottom-right::before,
+.border-bottom-right::after {
+  content: "";
+  display: block;
+  background-color: #ccc;
+  position: fixed;
+}
+
+.border-top-left::before,
+.border-bottom-right::before {
+  width: 10px;
+  height: 100vh;
+}
+
+.border-top-left::after,
+.border-bottom-right::after {
+  width: 100vw;
+  height: 10px;
+}
+
+.border-top-left::before,
+.border-top-left::after {
+  top: 0;
+  left: 0;
+}
+
+.border-bottom-right::before,
+.border-bottom-right::after {
+  bottom: 0;
+  right: 0;
+}
+
+.logo {
+  width: 4.5rem;
+  height: 6.5rem;
+  float: left;
+  margin-left:2rem;
+  background-color: #fff;
+  border-radius: 0 0 37px 0;
+  transition: all 0.2s ease-out;      
+  align-content: center;
+  position:absolute;
+}
+.logo img{
+width: 4.5rem;
+}
+
+/*SECTION PORTIFOLIO*/
+.slideshow{
+  border: solid 1px white;
+  border-radius: 1rem;
+}
+.backgroundSlide{
+  background-color: #494949;
+  width: 70%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  z-index: -1;
+}
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin:3rem 0 3rem;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 5rem;
+  padding: 20px;
+  position: absolute;
+  bottom: -3rem;
+  width: 100%;
+  text-align:start;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*SLIDE CONTENT*/
+.project-container {
+  box-sizing: border-box;
+}
+.portifolio-container{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  flex-direction: column;
+  padding: 1.5rem;
+}
+.project-image {
+  position: relative;
+  left: 1rem;
+}
+.project-image img {
+  width: 200px;
+  height: auto;
+  display: block;
+}
+.visit-site {
+  background-color: #808080;
+  color: #121212;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.project-details{
+  align-items: right;
+    justify-content: right;
+}
+.project-details h1 {
+  font-size: 2.5rem;
+  margin: 2rem 0 1rem;
+}
+
+.project-details p {
+  font-size: 1rem;
+  margin: 0 0 20px;
+  
+}
+
+.view-project {
+  float: right;
+  background-color: #808080;
+  color: #121212;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+
+}
+
