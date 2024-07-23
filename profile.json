@@ -50,7 +50,10 @@
       {
         "name": "Projeto Pokedex em JavaScript",
         "url": "https://github.com/YuriGil/Projeto-Pokedex-JS",
-        "github": true
+        "github": true,
+        "description":"Projeto Pokedex Feito em JavaScript",
+        "portifolioNumber":"01",
+        "PortifolioImg":""
       },
       {
         "name": "Projeto Portifolio",
