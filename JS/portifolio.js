@@ -7,12 +7,10 @@ function updatePortfolio(profileData) {
     <div class="portifolio-container">
     <div class="backgroundSlide"></div>
         <div class="project-image">
-          <img ${project.portifolioImg} class="printImage">
-     
-            <button href="https://example.com" class="visit-site">visitar site</button>
+          <img src="${project.portifolioImg}" class="printImage">  
+            <button href="${project.url}" class="visit-site">visitar site</button>
         </div>
         <div class="project-details">
-
           <h1 ${project.github ? 'class="github"' : ''}>${project.name}</h1>
             <p>${project.description}</p>
             <button href="${project.url}" target="_blank">${project.url}ver projeto</button>
@@ -28,7 +26,7 @@ function updatePortfolio(profileData) {
 <br>
 
 <!-- The dots/circles -->
-<div style="text-align:center">
+<div>
   <span class="dot" onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
