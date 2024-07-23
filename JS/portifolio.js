@@ -17,7 +17,7 @@ function updatePortfolio(profileData) {
             <p>${project.description}</p>
             <button href="${project.url}" target="_blank">${project.url}ver projeto</button>
         </div>
-        <div class="text">${project.portfolioNumber}</div>
+        <div class="text">${project.poritfolioNumber}</div>
       </div>
   <!-- Next and previous buttons -->
   <a class="prev" onclick="plusSlides(-1)">❮</a>
