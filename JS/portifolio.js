@@ -3,20 +3,21 @@ function updatePortfolio(profileData) {
     portfolio.innerHTML = profileData.portfolio.map(project => {
         return `
 <div class="slideshow-container">
-  <div class="project-container mySlides fade" style="display: block;">
+  <div class="project-container mySlides fade">
     <div class="portifolio-container">
     <div class="backgroundSlide"></div>
         <div class="project-image">
-          <img class="printImage"/>
+          <img class="printImage">${project.portifolioImg}
      
             <button href="https://example.com" class="visit-site">visitar site</button>
         </div>
         <div class="project-details">
+
           <h1 ${project.github ? 'class="github"' : ''}>${project.name}</h1>
-            <p>UX, UI e Protipação para aplicativo mobile.</p>
-            <button href="https://example.com" class="view-project">ver projeto</button>
+            <p>${project.description}</p>
+            <button href="${project.url}" target="_blank">${project.url}ver projeto</button>
         </div>
-        <div class="text">01</div>
+        <div class="text">${project.portfolioNumber}</div>
       </div>
   <!-- Next and previous buttons -->
   <a class="prev" onclick="plusSlides(-1)">❮</a>
