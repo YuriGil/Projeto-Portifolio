@@ -1,0 +1,83 @@
+/*BORDA*/
+.border-top-left,
+.border-bottom-right {
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: fixed;
+  z-index: -1;
+}
+
+.border-top-left {
+  top: 0;
+  left: 0;
+  background-color: transparent;
+}
+
+.border-bottom-right {
+  bottom: 0;
+  right: 0;
+  background-color: transparent;
+}
+
+.border-top-left::before,
+.border-top-left::after,
+.border-bottom-right::before,
+.border-bottom-right::after {
+  content: "";
+  display: block;
+  background-color: #ccc;
+  position: fixed;
+}
+
+.border-top-left::before,
+.border-bottom-right::before {
+  width: 10px;
+  height: 100vh;
+}
+
+.border-top-left::after,
+.border-bottom-right::after {
+  width: 100vw;
+  height: 10px;
+}
+
+.border-top-left::before,
+.border-top-left::after {
+  top: 0;
+  left: 0;
+}
+
+.border-bottom-right::before,
+.border-bottom-right::after {
+  bottom: 0;
+  right: 0;
+}
+/*BANDEIRA TOPO*/
+
+.logo {
+  width: 4.5rem;
+  height: 6.5rem;
+  float: left;
+  margin-left: 2rem;
+  background-color: #fff;
+  border-radius: 0 0 37px 0;
+  transition: all 0.2s ease-out;      
+  align-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.logo img {
+  width: 4.5rem;
+}
+
+.logo.visible {
+  opacity: 1;
+  transform: translateY(0);
+  animation: flagWave 1s ease-in-out 0.5s;
+}

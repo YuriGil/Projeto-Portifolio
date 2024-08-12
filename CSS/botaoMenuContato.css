@@ -1,0 +1,47 @@
+.btn-menu-contact {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 25rem;
+}
+/* Animação de clique do botão */
+.trigger-menu-contact {
+  border: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  background-color: transparent;
+}
+
+.trigger-menu-contact.active {
+  transform: rotate(90deg);
+/* Mudança de cor para indicar o clique */
+}
+
+/* Animação de abertura e fechamento do menu */
+.content-menu-contact {
+  position: fixed;
+  bottom: 4.5rem;
+  right: 20px; /* Ajuste o valor para corresponder à sua necessidade */
+  color: #000;
+  background-color: #ffffff;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px); /* Deslocamento inicial para efeito de deslizamento */
+  transition: opacity 0.5s ease-in-out, visibility 0.4s ease-in-out, transform 0.4s ease-in-out;
+  z-index: 998; /* Certifique-se de que o menu está acima de outros elementos */
+}
+
+.content-menu-contact.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0); /* Voltar para a posição original */
+  color: black;
+}
+
+.menuSecundario {
+  background-color: #fff;
+}
+
+.content-menu-contact nav a {
+  display: block;
+  padding: 10px 0;
+}

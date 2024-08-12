@@ -47,12 +47,31 @@
       rel="stylesheet"
       href="./CSS/skills.css"
     />
-    <link rel="stylesheet" href="./CSS/testeEu.css">
+    <link 
+    rel="stylesheet" 
+    href="./CSS/slidePortifolio.css"
+    />
+    <link 
+    rel="stylesheet" 
+    href="./CSS/slidePortifolioConteudo.css"
+    />
+    <link 
+    rel="stylesheet" 
+    href="./CSS/botaoMenuContato.css
+    "/>
+    <link 
+    rel="stylesheet" 
+    href="./CSS/botaoMenuSuperior.css"
+    />
+    <link 
+    rel="stylesheet" 
+    href="./CSS/borda.css
+    "/>
   </head>
   <body>
     <!--BANDEIRA SUPERIOR ESQUERDA-->
     <span class="logo">
-      <img src="./IMG/logoYuriGink.png" alt="Logo João Lemon UX/UI Designer">
+      <img src="./testeEva2.svg" alt="Logo João Lemon UX/UI Designer">
     </span>
 
     <!--BORDA-->
@@ -205,107 +224,58 @@
 
   <h2>Portifolio</h2>
 <section id="slideshow">
-<div class="slideshow-container">
-  <div class="project-container mySlides fade">
-    <div class="portifolio-container">
-    <div class="backgroundSlide"></div>
-        <div class="project-image">
-  
-     
-            <button href="https://example.com" class="visit-site">visitar site</button>
-        </div>
-        <div class="project-details">
-            <h1>Manage It! Aplicativo Mobile</h1>
-            <p>UX, UI e Protipação para aplicativo mobile.</p>
-            <button href="https://example.com" class="view-project">ver projeto</button>
-        </div>
-        <div class="text">01</div>
-      </div>
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-</div>
-<br>
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
+<div class="slideshow-container"></div>
+
 </section>
+<script>
+  /*bandeira SUperior esquerda*/
+document.addEventListener("DOMContentLoaded", function() {
+  var logo = document.querySelector(".logo");
+  logo.classList.add("visible");
 
+  window.addEventListener("scroll", function() {
+    if (window.scrollY === 0) {
+      logo.classList.add("visible");
+    } else {
+      logo.classList.remove("visible");
+    }
+  });
+  
+});
 
+document.addEventListener('DOMContentLoaded', () => {
+  const textElement = document.getElementById('profile-name');
+  const text = textElement.textContent;
+  
+  // Remove o texto original
+  textElement.textContent = '';
+
+  let index = 0;
+  
+  // Função para adicionar uma letra de cada vez
+  function type() {
+    if (index < text.length) {
+      textElement.textContent += text[index++];
+      setTimeout(type, 100); // Ajuste o tempo para a velocidade de digitação
+    }
+  }
+  
+  // Adiciona a animação de digitação ao elemento
+  textElement.style.animation = 'typing 4s steps(' + text.length + ', end) 1s 1 normal both, blink 0.75s step-end infinite';
+  
+  // Inicie a digitação
+  type();
+});
+
+</script>
   <footer></footer>
     </main>
-    <script>   
-
-  //SLIDE SHOW
-  let slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-
-  //MENU SUPERIOR DIREITO, ANIMAÇÃO E AÇÃO 
-
-  document.querySelector('.trigger-menu').addEventListener('click', function() {
-  const menuIcon = document.getElementsByClassName('.btn-menu');
-  this.classList.toggle('active');
-  document.querySelector('.content-menu').classList.toggle('active');
-  
-  // Mude o ícone dependendo do estado ativo do botão
-  if (this.classList.contains('active')) {
-    this.querySelector('.material-symbols-outlined').textContent = 'close';
-  } else {
-    this.querySelector('.material-symbols-outlined').textContent = 'menu';
-  }
-});
-
-//MENU INFERIOR DIREITO, ANIMAÇÃO E AÇÃO 
-document.querySelector('.trigger-menu-contact').addEventListener('click', function() {
-  const contactIcon = document.getElementsByClassName('.btn-menu-contact');
-  this.classList.toggle('active');
-  document.querySelector('.content-menu-contact').classList.toggle('active');
-  
-  // Mude o ícone dependendo do estado ativo do botão
-  if (this.classList.contains('active')) {
-    this.querySelector('.material-symbols-outlined').textContent = 'close';
-  } else {
-    this.querySelector('.material-symbols-outlined').textContent = 'perm_contact_calendar';
-  }
-});
-
-
-
-
-    </script>
     <script src="./JS/portifolio.js"></script>
     <script src="./js/acordeon.js"></script>
     <script src="./JS/api.js"></script>
     <script src="./JS/main.js"></script>
+    <script src="./JS/slidePortifolio.js"></script>
+    <script src="./JS/menuSuperior.js"></script>
+    <script src="./JS/menuInferior.js"></script>
   </body>
 </html>

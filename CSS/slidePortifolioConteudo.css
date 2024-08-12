@@ -1,0 +1,63 @@
+
+/*SLIDE CONTENT*/
+.project-container {
+    box-sizing: border-box;
+  }
+  .portifolio-container{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+  .project-image {
+    position: relative;
+  
+  }
+  .project-image img {
+    width: 70vw;
+    height: auto;
+    display: block;
+  }
+  .visit-site {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin:1rem;
+    border: solid 1px white;
+    border-radius: 0.5rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+  .visit-site:hover{
+    background-color: #717171;
+  }
+  .project-details{
+    align-items: right;
+      justify-content: right;
+  }
+  .project-details h1 {
+    font-size: 2.5rem;
+    margin: 2rem 0 1rem;
+  }
+  
+  .project-details p {
+    font-size: 1rem;
+    margin: 0 0 20px;
+  }
+  .view-project {
+    background-color: transparent;
+    color: #ffffff;
+    float: right;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: solid 1px white;
+    border-radius: 0.5rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+  
+  }
+  .view-project:hover{
+    background-color: #000;
+  }
+  

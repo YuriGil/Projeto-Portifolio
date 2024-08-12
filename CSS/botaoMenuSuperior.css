@@ -1,0 +1,71 @@
+/*BOTÕES*/
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 24;
+  font-size: 2.2rem;
+  transition: transform 0.3s ease-in-out;
+  color: white;
+}
+
+/*BOTÃO MENU*/
+.btn-menu .material-symbols-outlined {
+  z-index: 1;
+}
+.trigger-menu.active .material-symbols-outlined {
+  color: black;
+}
+.btn-menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+  background-color: transparent;
+  border-radius: 25rem;
+}
+
+.trigger-menu {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+
+.content-menu {
+  position: fixed;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  align-content: center;
+  background-color: #ffffff;
+  transition: opacity .5s ease-in-out, transform .5s ease-in-out;
+  transform: translateX(100%);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.content-menu.active {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.menuPrincipal {
+  background-color: #ffffff;
+  padding: 5rem;
+}
+.trigger-menu.active + .content-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.content-menu nav a {
+  display: block;
+  color: #9e9c9c;
+  padding: 5rem;
+}
+
+.content-menu nav a:hover {
+  text-decoration: underline;
+}
