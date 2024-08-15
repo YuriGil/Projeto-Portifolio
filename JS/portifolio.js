@@ -8,12 +8,12 @@ function updatePortfolio(profileData) {
                   <div class="backgroundSlide"></div>
                   <div class="project-image">
                       <img src="${project.portifolioImg}" class="printImage">
-                      <button href="${project.urlDirect}" class="visit-site" type="button">visitar site</button>
+                      <button class="visit-site" type="button" onclick="window.location.href='${project.urlDirect}' ">visitar site</button>
                   </div>
                   <div class="project-details">
                       <h1 ${project.github ? 'class="github"' : ''}>${project.name}</h1>
                       <p>${project.description}</p>
-                      <button href="${project.urlGit}" class="view-project" type="button">ver projeto</button>
+                      <button class="view-project" type="button" onclick="window.location.href='${project.urlGit}'">ver projeto</button>
                   </div>
                   <div class="text">${project.portifolioNumber}</div>
               </div>

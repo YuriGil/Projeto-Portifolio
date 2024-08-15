@@ -1,0 +1,118 @@
+A div a baixo representa um carrosel com 2 botões redirecionando para os respectivos links. Porem ao serem clicados nada acontece. Corriga o erro de funcionamento dessa div
+-------------HTML------------
+<div class="project-container mySlides fade" style="display:block">
+              <div class="portifolio-container">
+                  <div class="backgroundSlide"></div>
+                  <div class="project-image">
+                      <img src="https://raw.githubusercontent.com/YuriGil/Projeto-Portifolio/main/IMG/952ec7a9-7b3c-4cb0-8665-714df2b4821b.jpg" class="printImage">
+                      <button href="https://yurigil.github.io/Projeto-Pokedex-JS/" class="visit-site" type="button">visitar site</button>
+                  </div>
+                  <div class="project-details">
+                      <h1 class="github">Projeto Pokedex em JavaScript</h1>
+                      <p>Projeto Pokedex Feito em JavaScript</p>
+                      <button href="https://github.com/YuriGil/Projeto-Pokedex-JS" class="view-project" type="button">ver projeto</button>
+                  </div>
+                  <div class="text">01</div>
+              </div>
+              <!-- Next and previous buttons -->
+              <a class="prev" onclick="plusSlides(-1)">❮</a>
+              <a class="next" onclick="plusSlides(1)">❯</a>
+          </div>
+------------CSS----------------
+
+/*SLIDE CONTENT*/
+.project-container {
+    box-sizing: border-box;
+  }
+  .portifolio-container{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+  .project-image {
+    position: relative;
+  
+  }
+  .project-image img {
+    width: 70vw;
+    height: auto;
+    display: block;
+  }
+  .visit-site {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin:1rem;
+    border: solid 1px white;
+    border-radius: 0.5rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+  .visit-site:hover{
+    background-color: #717171;
+  }
+  .project-details{
+    align-items: right;
+      justify-content: right;
+  }
+  .project-details h1 {
+    font-size: 2.5rem;
+    margin: 2rem 0 1rem;
+  }
+  
+  .project-details p {
+    font-size: 1rem;
+    margin: 0 0 20px;
+  }
+  .view-project {
+    background-color: transparent;
+    color: #ffffff;
+    float: right;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: solid 1px white;
+    border-radius: 0.5rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+  
+  }
+  .view-project:hover{
+    background-color: #000;
+  }
+  ------------JAVASCRIPT------------
+  function updatePortfolio(profileData) {
+  const portfolio = document.getElementById('slideshow');
+  portfolio.innerHTML = profileData.portfolio.map((project, index) => {
+      return `
+      <div class="slideshow-container">
+          <div class="project-container mySlides fade" style="display:${index === 0 ? 'block' : 'none'}">
+              <div class="portifolio-container">
+                  <div class="backgroundSlide"></div>
+                  <div class="project-image">
+                      <img src="${project.portifolioImg}" class="printImage">
+                      <button href="${project.urlDirect}" class="visit-site" type="button">visitar site</button>
+                  </div>
+                  <div class="project-details">
+                      <h1 ${project.github ? 'class="github"' : ''}>${project.name}</h1>
+                      <p>${project.description}</p>
+                      <button href="${project.urlGit}" class="view-project" type="button">ver projeto</button>
+                  </div>
+                  <div class="text">${project.portifolioNumber}</div>
+              </div>
+              <!-- Next and previous buttons -->
+              <a class="prev" onclick="plusSlides(-1)">❮</a>
+              <a class="next" onclick="plusSlides(1)">❯</a>
+          </div>
+      </div>
+  `;
+  }).join('');
+
+  // Adcionando os botões por fora para não ficar duplicado
+  portfolio.innerHTML += `
+  <div style="text-align:center">
+      ${profileData.portfolio.map((_, index) => `<span class="dot" onclick="currentSlide(${index + 1})"></span>`).join('')}
+  </div>
+  `;
+}
