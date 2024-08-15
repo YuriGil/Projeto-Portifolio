@@ -5,7 +5,7 @@
   height: 30px;
   display: block;
   position: fixed;
-  z-index: -1;
+
 }
 
 .border-top-left {
@@ -56,6 +56,7 @@
 /*BANDEIRA TOPO*/
 
 .logo {
+  z-index: 100;
   width: 4.5rem;
   height: 6.5rem;
   float: left;

@@ -51,7 +51,7 @@
 
 .menuPrincipal {
   background-color: #ffffff;
-  padding: 5rem;
+  padding: 0 0 5rem;
 }
 .trigger-menu.active + .content-menu {
   display: block;

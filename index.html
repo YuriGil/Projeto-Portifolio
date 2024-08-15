@@ -71,7 +71,7 @@
   <body>
     <!--BANDEIRA SUPERIOR ESQUERDA-->
     <span class="logo">
-      <img src="./VP1371 Hello Kitty SVG.svg" alt="Logo João Lemon UX/UI Designer">
+      <img src="./IMG/VP1371 Hello Kitty SVG.svg" alt="Logo João Lemon UX/UI Designer">
     </span>
 
     <!--BORDA-->
@@ -86,8 +86,8 @@
       <div class="content-menu">
         <nav class="menuPrincipal">
           <a href="#">HOME</a>
-          <a href="pages/portfolio.html">PORTIFOLIO</a>
-          <a href="pages/sobre.html">SOBRE</a>
+          <a href="#portifolio">PORTIFOLIO</a>
+          <a href="#sobre" id="menuSobre">SOBRE</a>
         </nav>
       </div>
     </section>
@@ -161,21 +161,6 @@
         </div>
       </section>
 
-      <section class="acordeon">
-        <button class="trigger" type="button">
-          <h2>Portifolio</h2>
-        </button>
-        <div class="content">
-          <ul class="portifolio"
-          id="profile.portfolio">
-            <li>
-              <h3 class="title github">Criando um App de Portifolio</h3>
-              <a href="http://www.google.com">www.google.com</a>
-            </li>
-            </li>
-          </ul>
-        </div>
-      </section>
 
       <section class="acordeon">
         <button class="trigger" type="button">
@@ -197,7 +182,7 @@
           </ul>
         </div>
       </section>
-      <section class="acordeon">
+      <section id="sobre" class="acordeon">
         <button class="trigger" type="button">
           <h2>Dados Pessoais</h2>
         </button>
@@ -228,6 +213,7 @@
 
 </section>
 <script>
+
   /*bandeira SUperior esquerda*/
 document.addEventListener("DOMContentLoaded", function() {
   var logo = document.querySelector(".logo");
@@ -265,7 +251,25 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // Inicie a digitação
   type();
+
 });
+
+  document.getElementById('menuSobre').addEventListener('click', function(event) {
+    event.preventDefault(); // Previne o comportamento padrão do link
+    
+    // Rolagem suave para a seção "sobre"
+    const sobreSection = document.getElementById('sobre');
+    sobreSection.scrollIntoView({ behavior: 'smooth' });
+    
+    // Abrir o acordeon após a rolagem
+    const triggerButton = sobreSection.querySelector('.trigger');
+    const contentDiv = sobreSection.querySelector('.content');
+
+    // Alternativamente, você pode simular um clique no botão trigger para abrir o acordeon
+    triggerButton.click();
+  });
+
+
 
 </script>
   <footer></footer>

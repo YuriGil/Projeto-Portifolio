@@ -46,6 +46,8 @@
     margin: 0 0 20px;
   }
   .view-project {
+    z-index: 10;
+    position: relative;
     background-color: transparent;
     color: #ffffff;
     float: right;
@@ -60,4 +62,3 @@
   .view-project:hover{
     background-color: #000;
   }
-  

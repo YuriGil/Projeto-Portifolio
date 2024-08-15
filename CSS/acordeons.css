@@ -38,7 +38,7 @@
     height: 1rem;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url("/JavaScript/ProjetoPortifolio/IMG/icons/seta.svg");
+    background-image: url("../IMG/icons/seta.svg");
     transition: .5s;
 }
   .acordeon.open .trigger::after{
