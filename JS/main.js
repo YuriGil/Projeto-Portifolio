@@ -1,6 +1,6 @@
 function updateProfileInfo(profileData) {
   
-  const photo = document.getElementById("profile.photo");
+   const photo = document.getElementById("profile.photo");
    photo.src = profileData.photo;
    photo.atl = profileData.name; 
    
@@ -54,6 +54,18 @@ function updateProfessionalExperience(profileData) {
               <h3 class="title">${experience.name}</h3>
               <p class="period">${experience.period}</p>
               <p>${experience.description}</p>
+          </li>
+      `
+  }).join('')
+}
+
+function updatePortfolio(profileData) {
+  const portfolio = document.getElementById('profile.portfolio')
+  portfolio.innerHTML = profileData.portfolio.map(project => {
+      return `
+          <li>
+              <h3 ${project.github ? 'class="github"' : ''}>${project.name}</h3>
+              <a href="${project.url}" target="_blank">${project.url}</a>
           </li>
       `
   }).join('')

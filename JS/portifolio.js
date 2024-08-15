@@ -13,6 +13,7 @@ function updatePortfolio(profileData) {
                   <div class="project-details">                 
                   <h1 ${project.github ? 'class="github"' : ''}>${project.name}</h1>
                   <p>${project.description}</p>
+                  
                   <button class="view-project" type="button" onclick="window.location.href='${project.urlGit}' ">ver projeto</button>
                   </div>
                   <div class="text">${project.portifolioNumber}</div>
