@@ -10,12 +10,13 @@ function updatePortfolio(profileData) {
                       <img src="${project.portifolioImg}" class="printImage">
                       <button class="visit-site" type="button" onclick="window.location.href='${project.urlDirect}' ">visitar site</button>
                   </div>
-                  <div class="project-details">
-                      <h1 ${project.github ? 'class="github"' : ''}>${project.name}</h1>
-                      <p>${project.description}</p>
-                      <button class="view-project" type="button" onclick="window.location.href='${project.urlGit}'">ver projeto</button>
+                  <div class="project-details">                 
+                  <h1 ${project.github ? 'class="github"' : ''}>${project.name}</h1>
+                  <p>${project.description}</p>
+                  <button class="view-project" type="button" onclick="window.location.href='${project.urlGit}' ">ver projeto</button>
                   </div>
                   <div class="text">${project.portifolioNumber}</div>
+
               </div>
               <!-- Next and previous buttons -->
               <a class="prev" onclick="plusSlides(-1)">❮</a>
