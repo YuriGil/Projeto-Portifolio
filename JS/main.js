@@ -1,8 +1,13 @@
 function updateProfileInfo(profileData) {
-  
-   const photo = document.getElementById("profile.photo");
-   photo.src = profileData.photo;
-   photo.atl = profileData.name; 
+  const github = document.getElementById("profile.github");
+  github.innerText = profileData.github ;
+   
+  const linkedin = document.getElementById("profile.linkedin");
+  linkedin.innerHTML = profileData.linkedin;
+
+  const photo = document.getElementById("profile.photo");
+  photo.src = profileData.photo;
+  photo.atl = profileData.name; 
    
 
   const name = document.getElementById("profile.name");
@@ -21,6 +26,17 @@ function updateProfileInfo(profileData) {
   const email = document.getElementById("profile.email");
   email.innerText = profileData.email;
   contact.href = `email:${profileData.email}`;
+  
+  //Botão de contato inferior
+  const Contact = document.getElementById("Profile.Contact");
+  Contact.innerText = profileData.phone;
+  Contact.href = `tel:${profileData.phone}`;
+
+  const Email = document.getElementById("Profile.Email");
+  Email.innerText = profileData.email;
+  contact.href = `email:${profileData.email}`;
+
+  
 }
 
 function updateSoftSkills(profileData) {

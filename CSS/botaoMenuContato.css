@@ -36,11 +36,26 @@
   transform: translateY(0); /* Voltar para a posição original */
   color: black;
 }
-
+.content-menu-contact h2{
+  font-size: 2rem;
+  padding: 1rem;
+  margin-left: 1rem;
+}
 .menuSecundario {
   background-color: #fff;
+  padding: 1rem;
 }
-
+.menuSecundario a {
+  color: #000;
+}
+.menuSecundario img{
+  width: 1.5rem;
+  margin-right: 1.5rem;
+}
+.menuSecundario span{
+  display: flex;
+  padding: 0.5rem;
+}
 .content-menu-contact nav a {
   display: block;
   padding: 10px 0;
