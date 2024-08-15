@@ -3,6 +3,7 @@
   bottom: 20px;
   right: 20px;
   border-radius: 25rem;
+  z-index: 100;
 }
 /* Animação de clique do botão */
 .trigger-menu-contact {

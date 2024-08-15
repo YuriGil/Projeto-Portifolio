@@ -1,0 +1,16 @@
+
+.dadosPessoais{
+    position:absolute;
+    font-size: 2rem;
+    padding: 1rem;
+}
+.dadosPessoais p {
+    padding: .5rem;
+}
+.dadosPessoaisFoto img{
+    margin-right: 1rem;
+    display:flex;
+    width: 15rem;
+    border-radius: 50%;
+    float: right;
+}
