@@ -44,10 +44,14 @@
 .carousel-controls {
   position: absolute;
   top: 50%;
+  left: 0;
+  right: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   transform: translateY(-50%);
+  pointer-events: none; /* Para que apenas os botões sejam clicáveis */
 }
 
 .carousel-controls button {
@@ -57,6 +61,7 @@
   padding: 10px;
   cursor: pointer;
   opacity: 0.8;
+  pointer-events: all; /* Permite que os botões sejam clicáveis */
 }
 
 .carousel-controls button:hover {
