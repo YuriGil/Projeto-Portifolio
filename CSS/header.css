@@ -11,6 +11,9 @@
   background-size: cover;
   z-index: -10;
 }
+.header h1{
+  font-size: 5rem;
+}
 .header .title {
   font: "#";
   text-align: center;
@@ -39,19 +42,7 @@
   background-size: contain;
   margin-right: 0.5rem;
 }
-/*MUDAR ICONES - Cor destuante*/
-.information .job::before {
-  background-image: url("../IMG/icons/job.svg");
-}
-.information .location::before {
-  background-image: url("../IMG/icons/location.svg");
-}
-.information .contact::before {
-  background-image: url("..//IMG/icons/contact.svg");
-}
-.information .email::before {
-  background-image: url("../IMG/icons/email.svg");
-}
+
 /* Define a animação de digitação */
 @keyframes typing {
   from { width: 0; }

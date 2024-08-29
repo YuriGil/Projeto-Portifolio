@@ -22,3 +22,20 @@ document.querySelector('.trigger-menu').addEventListener('click', function() {
     }, { once: true });
   }
 });
+
+
+//NAVEGAÇÃO DO MENU SUPERIOR
+document.getElementById('menuSobre').addEventListener('click', function(event) {
+  event.preventDefault(); // Previne o comportamento padrão do link
+  
+  // Rolagem suave para a seção "sobre"
+  const sobreSection = document.getElementById('sobre');
+  sobreSection.scrollIntoView({ behavior: 'smooth' });
+  
+  // Abrir o acordeon após a rolagem
+  const triggerButton = sobreSection.querySelector('.trigger');
+  const contentDiv = sobreSection.querySelector('.content');
+
+  // Alternativamente, você pode simular um clique no botão trigger para abrir o acordeon
+  triggerButton.click();
+});

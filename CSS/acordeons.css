@@ -58,3 +58,19 @@
       opacity: 1;
   }
   
+  /*ACORDEON CONTEUDO DADOS PESSOAIS*/
+.dadosPessoais li{
+  padding: 0;
+  margin-top: 1rem ;
+  
+}
+.dadosPessoaisFoto {
+  display: flex; 
+  justify-content: right;
+  margin-top: -8rem;
+}
+
+.dadosPessoaisFoto img {
+  width: 150px; 
+  border-radius: 50%; 
+}

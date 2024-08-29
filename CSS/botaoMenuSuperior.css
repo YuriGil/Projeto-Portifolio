@@ -1,43 +1,53 @@
-/*BOTÕES*/
+/* BOTÕES */
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 24;
   font-size: 2.2rem;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
   color: white;
 }
 
-/*BOTÃO MENU*/
+/* BOTÃO MENU */
 .btn-menu .material-symbols-outlined {
   z-index: 1;
 }
+
 .trigger-menu.active .material-symbols-outlined {
   color: black;
 }
+
 .btn-menu {
   position: fixed;
   top: 20px;
   right: 20px;
   z-index: 2;
   background-color: transparent;
-  border-radius: 25rem;
+  border-radius: 50%;
+  padding: 0.5rem;
+  cursor: pointer;
 }
 
 .trigger-menu {
   background-color: transparent;
   border: none;
   display: flex;
+  align-items: center;
+  justify-content: center;
   transition: transform 0.5s ease;
 }
 
-
+/* MENU */
 .content-menu {
   position: fixed;
   height: 100vh;
+  width: 300px;
   right: 0;
   top: 0;
-  align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: #ffffff;
-  transition: opacity .5s ease-in-out, transform .5s ease-in-out;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
   transform: translateX(100%);
   opacity: 0;
   visibility: hidden;
@@ -51,21 +61,76 @@
 
 .menuPrincipal {
   background-color: #ffffff;
-  padding: 0 0 5rem;
-}
-.trigger-menu.active + .content-menu {
-  display: block;
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(0);
+  padding: 2rem 1rem;
+  width: 100%;
 }
 
 .content-menu nav a {
   display: block;
   color: #9e9c9c;
-  padding: 5rem;
+  padding: 1.5rem;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.2rem;
+  transition: color 0.3s ease-in-out;
+  margin: 0 0 10rem;
+
 }
 
 .content-menu nav a:hover {
-  text-decoration: underline;
+  color: #494949;
+}
+
+/* Wrapper (Apenas para demonstração) */
+.wrapper {
+  margin: 150px auto;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+/* BOTÃO CUSTOMIZADO */
+.btn6 {
+  padding: 15px 100px;
+  margin: 10px 4px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid transparent;
+  transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
+}
+
+.btn6::before,
+.btn6::after {
+  content: '';
+  position: absolute;
+  background:#494949;
+  transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
+}
+
+.btn6::before {
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+}
+
+.btn6::after {
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 1px;
+}
+
+.btn6:hover::before,
+.btn6:hover::after {
+  width: 100%;
+}
+
+.btn6:hover {
+  border-left: 1px solid #494949;
+  border-right: 1px solid #494949;
 }

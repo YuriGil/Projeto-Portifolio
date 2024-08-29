@@ -46,8 +46,7 @@
   "languages": [
     "Português BR",
     "Inglês (intermediário)",
-    "Espanhol (intermediário)",
-    "Italiano (iniciante)"
+    "Espanhol (intermediário)"
   ],
   "portfolio": [
     {
@@ -67,16 +66,8 @@
       "portifolioNumber": "02",
       "portifolioImg": "https://raw.githubusercontent.com/YuriGil/Projeto-Portifolio/main/IMG/print/952ec7a9-7b3c-4cb0-8665-714df2b4821b.jpg",
       "urlDirect": "https://yurigil.github.io/Projeto-Pokedex-JS/"
-    },
-    {
-      "name": "Teste De Manuntenção",
-      "urlGit": "https://github.com/YuriGil/Projeto-Pokedex-JS",
-      "github": true,
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium vitae mollitia quo in culpa! Aspernatur expedita nesciunt",
-      "portifolioNumber": "03",
-      "portifolioImg": "https://raw.githubusercontent.com/YuriGil/Projeto-Portifolio/main/IMG/print/952ec7a9-7b3c-4cb0-8665-714df2b4821b.jpg",
-      "urlDirect": "https://yurigil.github.io/Projeto-Pokedex-JS/"
     }
+ 
   ],
   "professionalExperience": [
     {
