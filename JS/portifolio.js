@@ -27,8 +27,8 @@ function updatePortfolio(profileData) {
                           <div class="text">${project.portifolioNumber}</div>
                       </div>
                       <!-- Next and previous buttons -->
-                      <a class="prev" onclick="plusSlides(-1)">❮</a>
-                      <a class="next" onclick="plusSlides(1)">❯</a>
+                      <a class="prev" onclick="plusSlides(-1)">&lt;</a>
+                      <a class="next" onclick="plusSlides(1)">&gt;</a>
                   </div>
               </div>
               `;

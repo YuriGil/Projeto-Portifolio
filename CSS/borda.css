@@ -56,7 +56,7 @@
 /*BANDEIRA TOPO*/
 
 .logo {
-  z-index: 100;
+  z-index: 9;
   width: 4.5rem;
   height: 6.5rem;
   float: left;

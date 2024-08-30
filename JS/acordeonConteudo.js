@@ -20,8 +20,8 @@ function updateAcordeon(profileData) {
                                     `).join('')}
                                 </ul>
                                 <div class="carousel-controls">
-                                    <button class="carousel-prev">❮</button>
-                                    <button class="carousel-next">❯</button>
+                                    <button class="carousel-next">&lt;</button>
+                                    <button class="carousel-prev">&gt;</button>
                                 </div>
                             </div>
                         </section>
