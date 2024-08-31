@@ -34,8 +34,8 @@ function startCarousel() {
     let interval = setInterval(moveToNextSlide, 4000); // 2 segundos
 
     // Adiciona eventos aos botões de navegação
-    const nextButton = document.querySelector('.carousel-next');
-    const prevButton = document.querySelector('.carousel-prev');
+    const nextButton = document.querySelector('.carousel-prev');
+    const prevButton = document.querySelector('.carousel-next');
 
     nextButton.addEventListener('click', function() {
         clearInterval(interval); // Para o slide automático ao interagir

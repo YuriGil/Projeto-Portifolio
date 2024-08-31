@@ -11,6 +11,7 @@ function updateAcordeon(profileData) {
                         <section class="tools">
                             <h3>Hard Skills</h3>
                             <div class="carousel">
+                            <div class="carousel-controls">
                                 <ul id="profile.skills.hardSkills">
                                     ${profileData.skills.hardSkills.map(skill => `
                                         <li>
@@ -19,7 +20,6 @@ function updateAcordeon(profileData) {
                                         </li>
                                     `).join('')}
                                 </ul>
-                                <div class="carousel-controls">
                                     <button class="carousel-next">&lt;</button>
                                     <button class="carousel-prev">&gt;</button>
                                 </div>
