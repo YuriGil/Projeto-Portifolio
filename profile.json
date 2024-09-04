@@ -1,5 +1,5 @@
 { 
-  "nameLittle":"Yuri",
+  "nameLittle": "Yuri",
   "name": "Yuri Gil De Souza",
   "photo": "https://avatars.githubusercontent.com/u/128939980?s=400&u=e44bf8a8d1ca71ed6f5415e29e52f319614dae61&v=4",
   "job": "Web Developer",
@@ -17,23 +17,23 @@
       },
       {
         "name": "Java",
-        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/java.png"
+        "logo": "https://raw.githubusercontent.com/YuriGil/Projeto-Portifolio/main/IMG/icons/java.svg"
       },
       {
-        "name": "Angular",
-        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/angular.png"
+        "name": "CSS",
+        "logo": "https://raw.githubusercontent.com/YuriGil/Projeto-Portifolio/main/IMG/icons/css.svg"
+      },
+      {
+        "name": "JavaScript",
+        "logo": "https://raw.githubusercontent.com/YuriGil/Projeto-Portifolio/main/IMG/icons/javascript2.svg"
       },
       {
         "name": "React",
-        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/react.png"
+        "logo": "https://github.com/YuriGil/Projeto-Portifolio/blob/main/IMG/icons/react.svg"
       },
       {
-        "name": "Mongodb",
-        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/mongodb.png"
-      },
-      {
-        "name": "Postgresql",
-        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/postgresql.png"
+        "name": "TypeScript",
+        "logo": "https://raw.githubusercontent.com/YuriGil/Projeto-Portifolio/main/IMG/icons/typescript.svg"
       }
     ],
     "softSkills": [
