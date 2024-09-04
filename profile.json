@@ -1,14 +1,13 @@
-{ 
-  "nameLittle": "Yuri",
+{
+  "nameLittle": "Yuri!",
   "name": "Yuri Gil De Souza",
   "photo": "https://avatars.githubusercontent.com/u/128939980?s=400&u=e44bf8a8d1ca71ed6f5415e29e52f319614dae61&v=4",
   "job": "Web Developer",
   "location": "Maricá - RJ",
   "phone": "(21) 980044800",
   "email": "yurigink@gmail.com",
-  "linkedin":"linkedin.com/in/yuri-gil/",
-  "github":"github.com/YuriGil/",
-
+  "linkedin": "linkedin.com/in/yuri-gil/",
+  "github": "github.com/YuriGil/",
   "skills": {
     "hardSkills": [
       {
@@ -29,7 +28,7 @@
       },
       {
         "name": "React",
-        "logo": "https://github.com/YuriGil/Projeto-Portifolio/blob/main/IMG/icons/react.svg"
+        "logo": "https://raw.githubusercontent.com/YuriGil/Projeto-Portifolio/main/IMG/icons/react.svg"
       },
       {
         "name": "TypeScript",
@@ -68,7 +67,6 @@
       "portifolioImg": "https://raw.githubusercontent.com/YuriGil/Projeto-Portifolio/main/IMG/print/952ec7a9-7b3c-4cb0-8665-714df2b4821b.jpg",
       "urlDirect": "https://yurigil.github.io/Projeto-Pokedex-JS/"
     }
- 
   ],
   "professionalExperience": [
     {
@@ -76,6 +74,5 @@
       "period": "AGO - 2023 até DEZ - 2024",
       "description": "Desenvolvimento de landpages dinamicas com uso de WordPress e Linguages de front end como HTML, CSS e JavaScript. Criação de paginas com foco para conversão de clientes com base no funil de conversão"
     }
-
   ]
 }
