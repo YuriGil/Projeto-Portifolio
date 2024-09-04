@@ -8,6 +8,6 @@ window.onload = function() {
         setTimeout(function() {
             loadingScreen.style.display = 'none';
             document.getElementById('content').style.display = 'block';
-        }, 1000); // Duração da transição do fade out (1 segundo)
+        }, 1500); // Duração da transição do fade out (1 segundo)
     }, 2000);
 };

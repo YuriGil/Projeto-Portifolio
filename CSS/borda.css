@@ -26,7 +26,7 @@
 .border-bottom-right::after {
   content: "";
   display: block;
-  background-color: #ccc;
+  background-color: #000;
   position: fixed;
 }
 
@@ -61,7 +61,7 @@
   height: 6.5rem;
   float: left;
   margin-left: 2rem;
-  background-color: #fff;
+  background-color: #7a7a7a;
   border-radius: 0 0 37px 0;
   transition: all 0.2s ease-out;      
   align-content: center;
@@ -75,6 +75,7 @@
 
 .logo img {
   width: 4.5rem;
+  margin-top: 1rem;
 }
 
 .logo.visible {

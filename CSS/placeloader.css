@@ -1,6 +1,5 @@
 /* Oculta o conteúdo do site até que o carregamento seja concluído */
 #content {
-    z-index: 9999;
     display: none;
     text-align: center;
     padding: 20px;
@@ -8,7 +7,7 @@
 
 /* Estiliza a tela de carregamento */
 #loading-screen {
-    
+    z-index: 9999;
     position: fixed;
     top: 0;
     left: 0;
@@ -18,10 +17,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: opacity 1s ease; /* Transição suave de opacidade */
-    opacity: 1; /* Define a opacidade inicial */
+    transition: opacity 1.5s ease; 
+    flex-direction: column;
+    opacity: 1; 
 }
-
+/* Logo do placeloader */
+#loading-screen img{
+    width: 70vw;
+    margin-bottom: 50px;
+}
 /* Animação do círculo girando */
 .loader {
     border: 16px solid #888888;
@@ -32,11 +36,15 @@
     animation: spin 2s linear infinite;
 }
 
-#loading-screen img{
-    width: 30vw;
-}
 /* Define a animação de rotação */
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+@media only screen and (min-width: 1824px){
+    #loading-screen img{
+        width: 40vw;
+        margin-bottom: 50px;
+    }
 }
