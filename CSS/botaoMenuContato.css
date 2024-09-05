@@ -22,8 +22,8 @@
   position: fixed;
   bottom: 4.5rem;
   right: 20px; /* Ajuste o valor para corresponder à sua necessidade */
-  color: #000;
-  background-color: #ffffff;
+  color: #322030;
+  background-color: #fcfdeb;
   opacity: 0;
   visibility: hidden;
   transform: translateY(20px); /* Deslocamento inicial para efeito de deslizamento */
@@ -43,11 +43,11 @@
   margin-left: 1rem;
 }
 .menuSecundario {
-  background-color: #fff;
+  background-color: #fcfdeb;
   padding: 1rem;
 }
 .menuSecundario a {
-  color: #000;
+  color: #322030;
 }
 .menuSecundario img{
   width: 1.5rem;

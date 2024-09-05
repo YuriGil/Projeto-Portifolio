@@ -1,76 +1,88 @@
+#acordeonConj {
+  padding: 0.5rem;
+}
+
 .acordeon {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 1rem 0;
-    border: 1px solid #fff;
-    border-radius: 1rem;
-    transition: .2s;
-  }
-  .acordeon.open,
-  .acordeon:hover {
-    background-color: #6e6e6ec2;
-  
-  }
-  .acordeon .trigger {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.5rem;
-    font-weight: 700;
-    padding: 1rem 2rem;
-    background-color: transparent;
-    color: #fff;
-    border: none;
-  }
-  .acordeon .trigger h2{
-    margin:0;
-    font-size: 1.5rem;
-  }
-  .acordeon .trigger:hover {
-    cursor: pointer;
-  }
-  .acordeon .trigger::after {
-    content: "";
-    display: inline-block;
-    width: 1rem;
-    height: 1rem;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url("../IMG/icons/seta.svg");
-    transition: .5s;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 1rem 0;
+  border: 1px solid #322030;
+  border-radius: 1rem;
+  transition: .2s;
+  position: relative;
 }
-  .acordeon.open .trigger::after{
-      transform: rotate(180deg);
-  }
-  
-  .acordeon .content {
-    overflow: hidden;
-    opacity: 0;
-    height: 0;
-    transition: opacity .5s ease-in-out;
-  }
-  .acordeon.open .content{
-      display: inline-block;
-      padding: 0 1rem 1rem 2rem;
-      height: auto;
-      opacity: 1;
-  }
-  
-  /*ACORDEON CONTEUDO DADOS PESSOAIS*/
-.dadosPessoais li{
+
+.acordeon.open,
+.acordeon:hover {
+  background-color: #c1a2a0;
+}
+
+.acordeon .trigger {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  color: #322030;
+  border: none;
+  position: relative;
+}
+.acordeon .trigger h2 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.acordeon .trigger:hover {
+  cursor: pointer;
+}
+
+.seta {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 1rem;
+  height: 1rem;
+  border: solid ;
+  border-width: 0 0 2px 2px;
+  transform: rotate(135deg);
+  transition: transform 0.5s ease;
+  color: #322030;
+}
+
+.acordeon.open .seta {
+  transform: rotate(-45deg); /* Gira 180 graus */
+}
+
+.acordeon .content {
+  overflow: hidden;
+  opacity: 0;
+  height: 0;
+  transition: opacity .5s ease-in-out, height .5s ease-in-out;
+}
+
+.acordeon.open .content {
+  display: inline-block;
+  padding: 1rem;
+  height: auto;
+  opacity: 1;
+}
+
+/*ACORDEON CONTEUDO DADOS PESSOAIS*/
+.dadosPessoais li {
   padding: 0;
-  margin-top: 1rem ;
-  
+  margin-top: 1rem;
 }
+
 .dadosPessoaisFoto {
-  display: flex; 
+  display: flex;
   justify-content: right;
   margin-top: -8rem;
 }
 
 .dadosPessoaisFoto img {
-  width: 150px; 
-  border-radius: 50%; 
+  width: 150px;
+  border-radius: 50%;
 }

@@ -3,6 +3,7 @@ function updateAcordeon(profileData) {
     if (acordeon) { 
         acordeon.innerHTML = `
             <section class="acordeon">
+            <div class="seta"></div>
                 <button class="trigger" type="button">
                     <h2>Skills</h2>
                 </button>
@@ -36,6 +37,7 @@ function updateAcordeon(profileData) {
             </section>
 
             <section class="acordeon">
+            <div class="seta"></div>
                 <button class="trigger" type="button">
                     <h2>Idiomas</h2>
                 </button>
@@ -47,6 +49,7 @@ function updateAcordeon(profileData) {
             </section>
 
             <section class="acordeon">
+            <div class="seta"></div>
                 <button class="trigger" type="button">
                     <h2>Experiência Profissional</h2>
                 </button>
@@ -64,6 +67,7 @@ function updateAcordeon(profileData) {
             </section>
 
             <section id="sobre" class="acordeon">
+            <div class="seta"></div>
                 <button class="trigger" type="button">
                     <h2>Dados Pessoais</h2>
                 </button>

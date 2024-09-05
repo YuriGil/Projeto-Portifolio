@@ -5,7 +5,7 @@
   height: 30px;
   display: block;
   position: fixed;
-
+  z-index: 99;
 }
 
 .border-top-left {
@@ -26,7 +26,7 @@
 .border-bottom-right::after {
   content: "";
   display: block;
-  background-color: #000;
+  background-color: #c1a2a0;
   position: fixed;
 }
 
@@ -55,15 +55,15 @@
 }
 /*BANDEIRA TOPO*/
 
-.logo {
-  z-index: 9;
+.logo { 
+  z-index: 999;
   width: 4.5rem;
   height: 6.5rem;
   float: left;
   margin-left: 2rem;
-  background-color: #7a7a7a;
+  background-color: #e3cebd;
   border-radius: 0 0 37px 0;
-  transition: all 0.2s ease-out;      
+  transition: all 0.2s ease-out;
   align-content: center;
   position: absolute;
   top: 0;
@@ -71,6 +71,7 @@
   opacity: 0;
   transform: translateY(-100%);
   transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .logo img {
@@ -82,4 +83,10 @@
   opacity: 1;
   transform: translateY(0);
   animation: flagWave 1s ease-in-out 0.5s;
+}
+
+/* Nova animação ao passar o mouse */
+.logo:hover {
+  transform: translateY(-10px); /* Move a logo 10px para cima */
+  transition: transform 0.3s ease-out; /* Ajusta a velocidade da animação */
 }
