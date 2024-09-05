@@ -93,3 +93,22 @@ function updateAcordeon(profileData) {
         startCarousel();
     }
 }
+function addAcordeonEventListeners() {
+    const triggers = document.querySelectorAll('.acordeon .trigger');
+
+    triggers.forEach(trigger => {
+        trigger.addEventListener('click', function() {
+            const acordeon = this.parentElement;
+            acordeon.classList.toggle('open');
+
+            const content = acordeon.querySelector('.content');
+            if (acordeon.classList.contains('open')) {
+                // Abrindo o conteúdo
+                content.style.height = content.scrollHeight + 'px';
+            } else {
+                // Fechando o conteúdo
+                content.style.height = '0';
+            }
+        });
+    });
+}

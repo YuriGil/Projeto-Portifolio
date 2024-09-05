@@ -36,7 +36,7 @@
   transition: transform 0.5s ease;
 }
 
-/* MENU */
+
 .content-menu {
   position: fixed;
   height: 100vh;
@@ -49,17 +49,17 @@
   justify-content: center;
   background-color: #fcfdeb;
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-  transform: translateX(100%);
+  transform: translateX(100%); /* Fechado */
   opacity: 0;
   visibility: hidden;
- 
 }
 
 .content-menu.active {
-  transform: translateX(0);
+  transform: translateX(0); /* Aberto */
   opacity: 1;
   visibility: visible;
 }
+
 
 .menuPrincipal { 
   background-color: #fcfdeb;

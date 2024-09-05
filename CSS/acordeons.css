@@ -1,7 +1,6 @@
 #acordeonConj {
   padding: 0.5rem;
 }
-
 .acordeon {
   display: flex;
   flex-direction: column;
@@ -9,7 +8,7 @@
   margin: 1rem 0;
   border: 1px solid #322030;
   border-radius: 1rem;
-  transition: .2s;
+  transition: background-color 0.2s;
   position: relative;
 }
 
@@ -30,6 +29,7 @@
   border: none;
   position: relative;
 }
+
 .acordeon .trigger h2 {
   margin: 0;
   font-size: 1.6rem;
@@ -45,7 +45,7 @@
   right: 1.5rem;
   width: 1rem;
   height: 1rem;
-  border: solid ;
+  border: solid;
   border-width: 0 0 2px 2px;
   transform: rotate(135deg);
   transition: transform 0.5s ease;
@@ -56,33 +56,21 @@
   transform: rotate(-45deg); /* Gira 180 graus */
 }
 
+/* Animação de abertura do acordeão */
 .acordeon .content {
   overflow: hidden;
   opacity: 0;
   height: 0;
-  transition: opacity .5s ease-in-out, height .5s ease-in-out;
+  transform: scaleY(0); /* Inicia com escala reduzida */
+  transition: height 0.6s ease, opacity 0.6s ease, transform 0.6s ease; /* Transições para suavizar abertura */
 }
 
 .acordeon.open .content {
-  display: inline-block;
-  padding: 1rem;
-  height: auto;
+  height: auto; /* Define a altura automática para expandir o conteúdo */
   opacity: 1;
+  transform: scaleY(1); /* Expande o conteúdo verticalmente */
 }
 
-/*ACORDEON CONTEUDO DADOS PESSOAIS*/
-.dadosPessoais li {
-  padding: 0;
-  margin-top: 1rem;
-}
-
-.dadosPessoaisFoto {
-  display: flex;
-  justify-content: right;
-  margin-top: -8rem;
-}
-
-.dadosPessoaisFoto img {
-  width: 150px;
-  border-radius: 50%;
+.acordeon.open .content {
+  transition: height 0.6s ease, opacity 0.6s ease, transform 0.6s ease;
 }

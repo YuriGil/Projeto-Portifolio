@@ -1,0 +1,19 @@
+/*ACORDEON CONTEUDO DADOS PESSOAIS*/
+.dadosPessoais {
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .dadosPessoaisFoto {
+    display: flex;
+    justify-content: right;
+    margin-top: -7.5rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .dadosPessoaisFoto img {
+    width: 150px;
+    border-radius: 50%;
+  }
+  
