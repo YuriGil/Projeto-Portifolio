@@ -15,22 +15,24 @@
   
   }
   .project-image img {
-    width: 70vw;
+    width: 80vw;
     height: auto;
     display: block;
+    border: solid 1px #322030;
+    border-radius: 5px;
   }
   .visit-site {
     background-color: transparent;
-    color: #ffffff;
+    color: #322030;
     padding: 10px 20px;
     margin:1rem;
-    border: solid 1px white;
+    border: solid 1px #322030;
     border-radius: 0.5rem;
     font-size: 1.3rem;
     cursor: pointer;
   }
   .visit-site:hover{
-    background-color: #717171;
+    background-color: #c1a2a0;
   }
   .project-details{
     align-items: right;
@@ -49,16 +51,16 @@
     z-index: 10;
     position: relative;
     background-color: transparent;
-    color: #ffffff;
+    color: #322030;
     float: right;
     padding: 10px 20px;
     text-decoration: none;
-    border: solid 1px white;
+    border: solid 1px #322030;
     border-radius: 0.5rem;
     font-size: 1.3rem;
     cursor: pointer;
   
   }
   .view-project:hover{
-    background-color: #000;
+    background-color: #c1a2a0;
   }
