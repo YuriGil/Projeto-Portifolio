@@ -1,8 +1,6 @@
-
 /*SECTION PORTIFOLIO*/
-.slideshow{
-    border: solid 1px #322030;
-    border-radius: 1rem;
+#slideshow{
+    margin-bottom: 3rem;
   }
   .backgroundSlide{
     background-color: #fcfdeb;
@@ -10,7 +8,7 @@
     height: 45vh;
     position: absolute;
     top: 0;
-    left: 2rem;
+    left: 2.5rem;
     z-index: -1;
   }
   /* Slideshow container */
@@ -52,7 +50,7 @@
   
   /* Caption text */
   .text {
-    color: #f2f2f2;
+    color: #322030;
     font-size: 5rem;
     padding: 15px;
     position: absolute;

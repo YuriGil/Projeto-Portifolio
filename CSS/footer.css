@@ -2,14 +2,15 @@
     margin-bottom: 0;
     display: flex;
     height: 15vh;
-    background-color: rgba(0, 0, 0, 0.39);
+    background-color: #fcfdeb;
     justify-content: space-around;
+    align-items: center;
     width: 100%;
 }
-.footerLogo {
-    width: 8rem;
+
+.footerLogo{
+width: 5rem;
 }
 .footer p{
     text-align: center;
-    align-self: center;
 }

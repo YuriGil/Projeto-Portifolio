@@ -3,8 +3,7 @@ function updatePortfolio(profileData) {
   if (profileData.portfolio) {
       portfolio.innerHTML = profileData.portfolio
           .map((project, index) => {
-              return `
-              <a id="portifolio"></a>
+              return `         
               <div class="slideshow-container">
                   <div class="project-container mySlides fade" style="display:${
                     index === 0 ? "block" : "none"
