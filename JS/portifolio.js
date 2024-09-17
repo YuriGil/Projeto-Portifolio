@@ -11,7 +11,7 @@ function updatePortfolio(profileData) {
                       <div class="portifolio-container">
                           <div class="backgroundSlide"></div>
                           <div class="project-image">
-                              <img src="${project.portifolioImg}" class="printImage">
+                              <a href='${project.urlDirect}'><img src="${project.portifolioImg}" class="printImage"></a>
                               <button class="visit-site" type="button" onclick="window.location.href='${
                                 project.urlDirect
                               }'">visitar site</button>
