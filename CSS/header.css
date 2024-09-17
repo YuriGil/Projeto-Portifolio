@@ -17,7 +17,7 @@
   left: 95%;  /* Centraliza horizontalmente */
   transform: translate(-50%, -50%);  /* Ajusta a imagem para estar no centro exato */
   opacity: 0.125;  /* Transparência da imagem */
-  width: 200vw;  /* Tamanho relativo da imagem */
+  width: 200vw;  
 }
 
 .header h1 {
@@ -25,12 +25,14 @@
   text-align: left;
   padding: 1rem;
   word-spacing: 0.5rem;
+  margin: 0;
 }
 
 .header p {
   font-size: 1.5rem;
   word-spacing: 0.5rem;
   text-align: left;
+  padding: 1rem;
   
 }
 
@@ -45,4 +47,38 @@
 @keyframes blink {
   0% { border-right: 2px solid black; }
   100% { border-right: 2px solid transparent; }
+}
+@media only screen and (min-width: 1024px) {
+  .header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .headerWords {
+    position: relative;
+  }
+
+  .header h1 {
+    font-size: 5rem;  /* Aumenta o tamanho do título em telas maiores */
+    padding:0 0 0 20rem;
+    margin: 0 0 2rem 0 ;
+    line-height: 4rem;
+  }
+
+  .header p {
+    font-size: 1.5rem;  /* Aumenta o tamanho do parágrafo em telas maiores */
+    padding:0 0 0 22rem;
+
+  }
+
+  .header Img {
+    position: absolute;
+    display: flex;  
+    left: 75%;
+    width: 60vw;  /* Limita a largura máxima da imagem ao tamanho da tela */
+
+  }
 }

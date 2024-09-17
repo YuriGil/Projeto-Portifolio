@@ -13,7 +13,29 @@
   }
   
   .dadosPessoaisFoto img {
-    width: 150px;
+    margin-top: 1rem;
+    width: 100px;
     border-radius: 50%;
   }
   
+ 
+  @media only screen and (min-width: 1024px){
+     #sobre .content {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente os itens dentro da div */
+    align-items: center; /* Centraliza verticalmente os itens dentro da div */
+    gap: 25vw; /* Adiciona espaço entre a imagem e o texto */
+    flex-wrap: wrap; /* Permite que o conteúdo se ajuste em telas menores */
+  }
+  .dadosPessoais{
+    justify-self: center;
+    margin-bottom: 2rem;
+    line-height: 2rem;
+  }
+  .dadosPessoaisFoto img{
+    margin-top: 8rem;
+    width: 200px;
+
+  }
+  
+  }

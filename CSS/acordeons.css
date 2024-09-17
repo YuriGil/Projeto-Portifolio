@@ -10,6 +10,7 @@
   border-radius: 1rem;
   transition: background-color 0.2s;
   position: relative;
+
 }
 
 .acordeon.open,
@@ -66,11 +67,18 @@
 }
 
 .acordeon.open .content {
-  height: auto; /* Define a altura automática para expandir o conteúdo */
+ 
   opacity: 1;
   transform: scaleY(1); /* Expande o conteúdo verticalmente */
 }
 
 .acordeon.open .content {
   transition: height 0.6s ease, opacity 0.6s ease, transform 0.6s ease;
+}
+@media only screen and (min-width: 1024px){
+  .acordeon{
+    width: 85vw;
+    margin:  2rem auto;
+
+  }
 }

@@ -65,3 +65,8 @@
 .carousel-controls button:hover {
   opacity: 1;
 }
+@media only screen and (min-width: 1024px){
+  .carousel{
+    max-width: 25vw;
+  }
+}

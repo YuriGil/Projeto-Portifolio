@@ -25,7 +25,7 @@
     background-color: transparent;
     color: #322030;
     padding: 10px 20px;
-    margin:1rem;
+    margin: 1rem;
     border: solid 1px #322030;
     border-radius: 0.5rem;
     font-size: 1.3rem;
@@ -64,3 +64,15 @@
   .view-project:hover{
     background-color: #c1a2a0;
   }
+  @media only screen and (min-width: 1024px) {
+    .project-image img{
+      width: 60vw;
+      height: auto;
+      display: block;
+    }
+    .project-details p {
+      font-size: 1rem;
+      margin: 0;
+    }
+  }
+  

@@ -45,7 +45,8 @@
   
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.1);
+    text-decoration: none;
   }
   
   /* Caption text */
@@ -83,5 +84,29 @@
   @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+  }
+  @media only screen and (min-width: 1024px) {
+    
+    .backgroundSlide {
+      width: 55vw;
+      height: 60vh;
+      top: 0;
+      left: 15rem;
+    }
+    .prev, .next{
+      margin-left: 5rem;
+      margin-right: 5rem;
+    } 
+    .slideshow-container {
+      margin:1rem 0 1rem;
+    }
+    .text {
+      color: #322030;
+      font-size: 5rem;
+      margin: 8rem;
+      margin-left: 5rem;
+      width: 100%;
+      text-align:end;
+    }
   }
   
