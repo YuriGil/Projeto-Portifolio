@@ -58,7 +58,7 @@
       "github": true,
       "description": "Projeto Wiki-Git Feito em React",
       "portifolioNumber": "01",
-      "portifolioImg": "https://raw.githubusercontent.com/YuriGil/Projeto-Portifolio/refs/heads/main/IMG/print/89723c25-fefe-48a0-bb76-13f34a612a29.jpg",
+      "portifolioImg": "https://raw.githubusercontent.com/YuriGil/Projeto-Portifolio/refs/heads/main/IMG/print/SocialReact.jpg",
       "urlDirect": "https://yurigil.github.io/Projeto-Rede-Social/"
     }, 
     {
@@ -67,7 +67,7 @@
       "github": true,
       "description": "Projeto Wiki-Git Feito em React",
       "portifolioNumber": "02",
-      "portifolioImg": "https://raw.githubusercontent.com/YuriGil/Wiki-React/refs/heads/main/wiki-react/src/assets/thumb-wiki-git.jpg?token=GHSAT0AAAAAAC3OQ2QFAYJZMYWTDCRTWYOAZ2QW4CA",
+      "portifolioImg": "https://raw.githubusercontent.com/YuriGil/Projeto-Portifolio/refs/heads/main/IMG/print/WikiReact.jpg",
       "urlDirect": "https://github.com/YuriGil/Wiki-React"
     },    
     {
@@ -76,7 +76,7 @@
       "github": true,
       "description": "Projeto Pokedex Feito em JavaScript",
       "portifolioNumber": "03",
-      "portifolioImg": "https://raw.githubusercontent.com/YuriGil/Projeto-Portifolio/main/IMG/print/952ec7a9-7b3c-4cb0-8665-714df2b4821b.jpg",
+      "portifolioImg": "https://raw.githubusercontent.com/YuriGil/Projeto-Portifolio/refs/heads/main/IMG/print/Pokedex.jpg",
       "urlDirect": "https://yurigil.github.io/Projeto-Pokedex-JS/"
     },
     {
@@ -85,7 +85,7 @@
       "github": true,
       "description": "Projeto Calculadora em React",
       "portifolioNumber": "04",
-      "portifolioImg": "https://raw.githubusercontent.com/YuriGil/Projeto-Portifolio/main/IMG/print/952ec7a9-7b3c-4cb0-8665-714df2b4821b.jpg",
+      "portifolioImg": "https://raw.githubusercontent.com/YuriGil/Projeto-Portifolio/refs/heads/main/IMG/print/Calculadora.jpg",
       "urlDirect": "https://yurigil.github.io/Calculadora-React-Dio/"
     },
     {
@@ -94,7 +94,7 @@
       "github": true,
       "description": "Site de portifolio utilizado para demonstração de HTML, CSS e JavaScript",
       "portifolioNumber": "05",
-      "portifolioImg": "https://raw.githubusercontent.com/YuriGil/Projeto-Portifolio/main/IMG/print/WhatsApp%20Image%202024-09-16%20at%2010.43.20%20PM.jpeg",
+      "portifolioImg": "https://raw.githubusercontent.com/YuriGil/Projeto-Portifolio/refs/heads/main/IMG/print/Portifolio.jpeg",
       "urlDirect": "https://yurigil.github.io/Projeto-Pokedex-JS/"
     }
   ],
