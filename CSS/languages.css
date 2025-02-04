@@ -1,0 +1,15 @@
+.languages{
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 1rem ;
+    list-style: inside;
+    margin: 1rem;
+}
+.languages li{
+    padding: 0.3rem;
+}
+@media only screen and (min-width: 1024px){
+    .languages li{
+        padding-left:4rem;
+    }
+}

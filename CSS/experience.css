@@ -1,0 +1,16 @@
+.content .experience{
+    padding: 1.5rem;
+}
+.experience h3{
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+.experience li{
+list-style: none;
+
+}
+.experience li .period{
+    padding: 0 0 0.5rem 1rem;
+    align-items: center;
+    
+}

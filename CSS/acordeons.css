@@ -1,0 +1,84 @@
+#acordeonConj {
+  padding: 0.5rem;
+}
+.acordeon {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 1rem 0;
+  border: 1px solid #322030;
+  border-radius: 1rem;
+  transition: background-color 0.2s;
+  position: relative;
+
+}
+
+.acordeon.open,
+.acordeon:hover {
+  background-color: #c1a2a0;
+}
+
+.acordeon .trigger {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  color: #322030;
+  border: none;
+  position: relative;
+}
+
+.acordeon .trigger h2 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.acordeon .trigger:hover {
+  cursor: pointer;
+}
+
+.seta {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 1rem;
+  height: 1rem;
+  border: solid;
+  border-width: 0 0 2px 2px;
+  transform: rotate(135deg);
+  transition: transform 0.5s ease;
+  color: #322030;
+}
+
+.acordeon.open .seta {
+  transform: rotate(-45deg); /* Gira 180 graus */
+}
+
+/* Animação de abertura do acordeão */
+.acordeon .content {
+  overflow: hidden;
+  opacity: 0;
+  height: 0;
+  transform: scaleY(0); /* Inicia com escala reduzida */
+  transition: height 0.6s ease, opacity 0.6s ease, transform 0.6s ease; /* Transições para suavizar abertura */
+}
+
+.acordeon.open .content {
+ 
+  opacity: 1;
+  transform: scaleY(1); /* Expande o conteúdo verticalmente */
+}
+
+.acordeon.open .content {
+  transition: height 0.6s ease, opacity 0.6s ease, transform 0.6s ease;
+}
+@media only screen and (min-width: 1024px){
+  .acordeon{
+    width: 85vw;
+    margin:  2rem auto;
+
+  }
+}

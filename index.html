@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONTES E ICONES -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ESTILOS GERAIS -->
+    <link rel="stylesheet" href="./CSS/global.css" />
+    <link rel="stylesheet" href="./CSS/header.css" />
+    <link rel="stylesheet" href="./CSS/acordeons.css" />
+    <link rel="stylesheet" href="./CSS/languages.css" />
+    <link rel="stylesheet" href="./CSS/portifolio.css" />
+    <link rel="stylesheet" href="./CSS/experience.css" />
+    <link rel="stylesheet" href="./CSS/skills.css" />
+    <link rel="stylesheet" href="./CSS/slidePortifolio.css" />
+    <link rel="stylesheet" href="./CSS/slidePortifolioConteudo.css" />
+    <link rel="stylesheet" href="./CSS/botaoMenuContato.css" />
+    <link rel="stylesheet" href="./CSS/botaoMenuSuperior.css" />
+    <link rel="stylesheet" href="./CSS/borda.css" />
+    <link rel="stylesheet" href="./CSS/placeloader.css" />
+    <link rel="stylesheet" href="./CSS/carrosel.css" />
+    <link rel="stylesheet" href="./CSS/footer.css" />
+    <link rel="stylesheet" href="./CSS/dadosPessoais.css">
+  </head>
+  
+  <body>
+    <!--PLACE LOADER-->
+    <div id="loading-screen">
+      <img src="./IMG/icons/capivaraLogo.png" alt="capivaraLogo">
+      <div class="loader"></div>
+    </div>
+
+    <!--BANDEIRA SUPERIOR ESQUERDA-->
+    <a
+      href="https://yurigil.github.io/Projeto-Portifolio/"
+      alt="Portifolio Yuri Gil De Souza"
+    >
+      <span class="logo">
+        <img
+          src="./IMG/icons/capivaraLogo.png"
+          alt="Logo Portifolio Yuri Gil"
+        />
+      </span>
+    </a>
+
+    <!--BORDA-->
+    <div class="border-top-left"></div>
+    <div class="border-bottom-right"></div>
+
+    <!--BOTÃO SUPERIOR DIREITO MENU NAVEGAÇÃO INTERRNA-->
+    <section class="btn-menu">
+      <button class="trigger-menu" type="button">
+        <span class="material-symbols-outlined">Home</span>
+      </button>
+      <div class="content-menu">
+        <nav class="menuPrincipal wrapper">
+          <a class="btn6" href="#">HOME</a>
+          <a class="btn6" href="#portifolio">PORTIFOLIO</a>
+          <a class="btn6" href="#sobre" id="menuSobre">SOBRE</a>
+        </nav>
+      </div>
+    </section>
+
+    <!--BOTÃO INFERIOR CONTATO MENU-->
+    <section id="botaoContato"></section>
+
+    <!--!!!!Otimizar imagem!!!!!!-->
+
+    <!--!!!!!HEADER!!!!!-->
+    <main class="main">
+
+      <header class="header">
+        <div class="headerWords"> 
+          <h1 class="title">
+            Oi, eu<br> sou o <span id="profile.nameLittle">Carregando...</span>
+          </h1>
+          <p>UX/UI Designer <br>e Desenvolvedor Web</p>
+        </div>
+          <img class="headerImg" src="./IMG/icons/capivaraLogo.png" alt="">
+      </header>
+
+      <!---ACORDEON COM INFORMAÇÕES-->
+      <div id="acordeonConj"></div>
+      
+      <!--SLIDESHOW PORTIFOLIO-->
+      <a id="portifolio">
+        <h2 class="portifolioH2">Portifolio</h2>
+      </a>
+
+      <section id="slideshow">
+        <div class="slideshow-container"></div>
+      </section>
+
+      <footer>
+        <div class="footer">
+          <a href="https://yurigil.github.io/Projeto-Portifolio/">
+          <img src="./IMG/icons/capivaraLogo.png" class="footerLogo" alt="">
+        </a>
+          <p>&copy; 2024 por <a href="https://www.linkedin.com/in/yuri-gil/">Yuri Gil</a></p>
+        </div>
+      </footer>
+
+    </main>
+    <script src="./JS/carousel.js"></script>
+    <script src="./JS/placeloader.js"></script>
+    <script src="./JS/acordeon.js"></script>
+    <script src="./JS/slidePortifolio.js"></script>
+    <script src="./JS/menuSuperior.js"></script>
+    <script src="./JS/bandeiraSuperior.js"></script>
+    <script src="./JS/botaoContato.js"></script>
+    <script src="./JS/acordeonConteudo.js"></script>
+    <script src="./JS/portifolio.js"></script>
+    <script src="./JS/api.js"></script>
+    <script src="./JS/main.js"></script>
+  </body>
+</html>
